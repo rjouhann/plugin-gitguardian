@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.honeytokens
+name: "gitguardian-honeytokens"
+title: "GitGuardian Honeytokens"
+description: "Deploy GitGuardian honeytokens from flows and react when one is used."
+body: "Create honeytokens with their value returned encrypted, list and revoke them, and start an incident response flow the moment a decoy credential is used."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

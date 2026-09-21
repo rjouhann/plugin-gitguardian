@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.healthchecks
+name: "gitguardian-healthchecks"
+title: "GitGuardian Health Checks"
+description: "Monitor and re-run GitGuardian integration health checks."
+body: "List the latest health check per integration instance, re-run a check on demand, and start a flow when an integration starts failing."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

@@ -1,0 +1,16 @@
+id: gitguardian_list_incidents
+namespace: sanity.checks
+
+tasks:
+  - id: list
+    type: io.kestra.plugin.gitguardian.incidents.List
+    apiUrl: http://localhost:18099
+    apiKey: "{{ secret('GITGUARDIAN_API_KEY') }}"
+    status: TRIGGERED
+    severity: CRITICAL
+
+  - id: assert
+    type: io.kestra.plugin.core.execution.Assert
+    conditions:
+      - "{{ outputs.list.size == 1 }}"
+      - "{{ outputs.list.rows[0].incidentName == 'AWS Keys - 1' }}"

@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.auditlogs
+name: "gitguardian-auditlogs"
+title: "GitGuardian Audit Logs"
+description: "Export GitGuardian audit logs and react to sensitive workspace actions."
+body: "List audit log entries with filters and cursor pagination for SIEM or warehouse export, and start a flow on new events such as ignored incidents or created API tokens."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"
