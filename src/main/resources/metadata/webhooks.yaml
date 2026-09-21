@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.webhooks
+name: "gitguardian-webhooks"
+title: "GitGuardian Webhooks"
+description: "Verify and parse GitGuardian custom webhook events."
+body: "Pair Kestra's core Webhook trigger with GitGuardian custom webhooks: check the HMAC signature and timestamp, then expose the typed incident and event fields for real-time response flows."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

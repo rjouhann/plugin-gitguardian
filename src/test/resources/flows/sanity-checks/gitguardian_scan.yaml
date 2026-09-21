@@ -1,0 +1,18 @@
+id: gitguardian_scan
+namespace: sanity.checks
+
+tasks:
+  - id: scan
+    type: io.kestra.plugin.gitguardian.scan.Scan
+    apiUrl: http://localhost:18099
+    apiKey: "{{ secret('GITGUARDIAN_API_KEY') }}"
+    filename: config.yml
+    content: |
+      database:
+        host: db.internal
+
+  - id: assert
+    type: io.kestra.plugin.core.execution.Assert
+    conditions:
+      - "{{ outputs.scan.policyBreakCount == 0 }}"
+      - "{{ outputs.scan.documentCount == 1 }}"

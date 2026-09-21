@@ -1,0 +1,24 @@
+id: gitguardian_webhook_receive
+namespace: sanity.checks
+
+tasks:
+  - id: event
+    type: io.kestra.plugin.gitguardian.webhooks.Receive
+    body:
+      source: GitGuardian
+      timestamp: "2026-09-21T07:45:32.930965Z"
+      action: incident_triggered
+      message: A new incident has been detected.
+      incident:
+        id: 31542
+        status: triggered
+        severity: high
+        validity: valid
+        gitguardian_url: https://dashboard.gitguardian.com/workspace/1/incidents/31542
+
+  - id: assert
+    type: io.kestra.plugin.core.execution.Assert
+    conditions:
+      - "{{ outputs.event.action == 'incident_triggered' }}"
+      - "{{ outputs.event.incident.id == 31542 }}"
+      - "{{ outputs.event.incident.severity == 'high' }}"

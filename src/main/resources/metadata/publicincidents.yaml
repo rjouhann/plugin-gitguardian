@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.publicincidents
+name: "gitguardian-publicincidents"
+title: "GitGuardian Public Monitoring Incidents"
+description: "React to, list, fetch, and triage GitGuardian Public Monitoring incidents."
+body: "Start a flow when a secret of yours is found on the public perimeter, list and fetch public incidents, and triage them: assign, set severity and custom tags, add notes, ignore, reopen, resolve."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

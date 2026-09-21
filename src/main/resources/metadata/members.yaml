@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.members
+name: "gitguardian-members"
+title: "GitGuardian Members"
+description: "Read GitGuardian workspace members."
+body: "List members to validate assignees and audit access."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

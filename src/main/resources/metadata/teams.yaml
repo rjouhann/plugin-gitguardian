@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.teams
+name: "gitguardian-teams"
+title: "GitGuardian Teams"
+description: "Read GitGuardian workspace teams."
+body: "List teams to resolve IDs for routing incidents and scoping sources."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

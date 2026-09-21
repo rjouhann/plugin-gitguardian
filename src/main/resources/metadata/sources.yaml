@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.sources
+name: "gitguardian-sources"
+title: "GitGuardian Sources"
+description: "Manage the GitGuardian monitored perimeter from Kestra."
+body: "List and fetch monitored sources, launch historical scans, and create custom sources that let scan.CreateIncidents register incidents for data GitGuardian does not monitor natively."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"
