@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.incidents
+name: "gitguardian-incidents"
+title: "GitGuardian Secret Incidents"
+description: "React to, list, fetch, and triage GitGuardian secret incidents."
+body: "Start a flow for every new secret incident, query incidents with server-side filters, fetch a single incident, and triage them: assign, set severity and custom tags, add notes, ignore, reopen, resolve."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"

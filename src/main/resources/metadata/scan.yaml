@@ -1,0 +1,8 @@
+group: io.kestra.plugin.gitguardian.scan
+name: "gitguardian-scan"
+title: "GitGuardian Secrets Scanning"
+description: "Scan inline content and internal storage files for hardcoded secrets."
+body: "Send documents to the GitGuardian secrets detection engine and fail the flow, or branch on the results, when a secret is found."
+videos: []
+createdBy: "GitGuardian"
+managedBy: "GitGuardian"
